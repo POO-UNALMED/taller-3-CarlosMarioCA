@@ -56,17 +56,17 @@ public class TV {
 
     //Get y set de canal
     public void setCanal(int canal) {
-        if(canal>0 && canal<120){
+        if (canal > 0 && canal < 120) {
             this.canal = canal;
         }
-        
+
     }
 
     public int getCanal() {
         return this.canal;
     }
 
-    //Get numTV(Número de televisores creados.
+    //Get numTV(Numero de televisores creados.
     public int getNumTV() {
         return this.numTV;
     }
