@@ -95,18 +95,25 @@ public class TV {
 
     //Recorrer canales hacia arriba
     public void canalUp() {
-        this.canal = this.canal + 1;
+    	int actual = this.canal;
+    	if((actual >= 0) && (actual <= 120)) {
+    		this.canal = this.canal + 1;
+    	}
+        
     }
 
     //Recorrer canales hacia abajo.
     public void canalDown() {
-        this.canal = this.canal - 1;
+    	int actual = this.canal;
+    	if((actual >= 0) && (actual <= 120)) {
+    		this.canal = this.canal - 1;
+    	}
     }
 
     //Subir volumen
     public void volumenUp() {
         int actual = this.volumen;
-        if (actual > 0 && actual < 7) {
+        if ((actual >= 0) && (actual <= 7)) {
             actual = actual + 1;
         }
     }
@@ -114,7 +121,7 @@ public class TV {
     //Bajar volumen
     public void volumenDown() {
         int actual = this.volumen;
-        if (actual > 0 && actual < 7) {
+        if ((actual >= 0) && (actual <= 7)) {
             actual = actual - 1;
         }
     }
