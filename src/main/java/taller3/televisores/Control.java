@@ -37,15 +37,15 @@ public class Control {
     }
     
     public void enlazar (TV tv){
-        setTv(tv);
+        setTV(tv);
         tv.setControl(this);
     }
     
-    public void setTv(TV tv){
+    public void setTV(TV tv){
         this.tv = tv;
     }
     
-    public TV getTv(){
+    public TV getTV(){
         return this.tv;
     }
 }

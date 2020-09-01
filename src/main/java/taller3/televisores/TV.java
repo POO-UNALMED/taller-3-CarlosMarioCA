@@ -11,6 +11,7 @@ public class TV {
     static int numTV;
 
     public TV(Marca marca, boolean estado) {
+        
         this.marca = marca;
         this.estado = estado;
         this.canal = 1;
@@ -68,13 +69,13 @@ public class TV {
     }
     
     //Setear numero de televisores
-    public void setNumTV(int aumento){
-        this.numTV = numTV + aumento;
+    public static void setNumTV(int aumento){
+        numTV = numTV + aumento;
     }
     
     //Get numTV(Numero de televisores creados)
-    public int getNumTv() {
-        return this.numTV;
+    public static int getNumTV() {
+        return numTV;
     }
 
     //Encender TV
