@@ -16,6 +16,7 @@ public class TV {
         this.canal = 1;
         this.volumen = 1;
         this.precio = 500;
+        setNumTV(1);
     }
 
     //Get y set de Marca
@@ -65,9 +66,14 @@ public class TV {
     public int getCanal() {
         return this.canal;
     }
-
-    //Get numTV(Numero de televisores creados.
-    public int getNumTV() {
+    
+    //Setear numero de televisores
+    public void setNumTV(int aumento){
+        this.numTV = numTV + aumento;
+    }
+    
+    //Get numTV(Numero de televisores creados)
+    public int getNumTv() {
         return this.numTV;
     }
 
