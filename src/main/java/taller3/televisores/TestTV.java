@@ -11,7 +11,7 @@ public class TestTV {
 	    tv1.setPrecio(2000);
 	    tv2.setCanal(90);
 	    tv1.setCanal(121);
-		tv2.setVolumen(7);
+            tv2.setVolumen(7);
 		
 		Control control1 = new Control();
 		control1.enlazar(tv1);
