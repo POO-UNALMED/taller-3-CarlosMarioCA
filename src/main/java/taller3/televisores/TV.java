@@ -52,6 +52,9 @@ public class TV {
         if ((volumen > 0) && (volumen < 7)) {
             this.volumen = volumen;
         }
+        else if ((volumen == 0) || (volumen == 7)){
+            this.volumen = volumen;
+    }
     }
 
     public int getVolumen() {
@@ -63,7 +66,9 @@ public class TV {
         if ((canal > 0) && (canal < 120)) {
             this.canal = canal;
         }
-
+        else if ((canal == 0) || (canal == 120)){
+            this.canal = canal;
+    }
     }
 
     public int getCanal() {
