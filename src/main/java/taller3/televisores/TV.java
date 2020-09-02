@@ -49,12 +49,9 @@ public class TV {
 
     //Get y set de volumen
     public void setVolumen(int volumen) {
-        if ((volumen > 0) && (volumen < 7)) {
+        if ((this.volumen >= 0) && (this.volumen <= 7)) {
             this.volumen = volumen;
         }
-        else if ((volumen == 0) || (volumen == 7)){
-            this.volumen = volumen;
-    }
     }
 
     public int getVolumen() {
@@ -63,12 +60,9 @@ public class TV {
 
     //Get y set de canal
     public void setCanal(int canal) {
-        if ((canal > 0) && (canal < 120)) {
+        if ((this.canal >= 0) && (this.canal <= 120)) {
             this.canal = canal;
         }
-        else if ((canal == 0) || (canal == 120)){
-            this.canal = canal;
-    }
     }
 
     public int getCanal() {
