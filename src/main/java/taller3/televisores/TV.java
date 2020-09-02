@@ -11,13 +11,13 @@ public class TV {
     static int numTV;
 
     public TV(Marca marca, boolean estado) {
-        
+
         this.marca = marca;
         this.estado = estado;
         this.canal = 1;
         this.volumen = 1;
         this.precio = 500;
-        this.numTV ++;
+        this.numTV++;
     }
 
     //Get y set de Marca
@@ -49,7 +49,9 @@ public class TV {
 
     //Get y set de volumen
     public void setVolumen(int volumen) {
-        this.volumen = volumen;
+        if ((volumen > 0) && (volumen < 7)) {
+            this.volumen = volumen;
+        }
     }
 
     public int getVolumen() {
@@ -58,7 +60,7 @@ public class TV {
 
     //Get y set de canal
     public void setCanal(int canal) {
-        if (canal > 0 && canal < 120) {
+        if ((canal > 0) && (canal < 120)) {
             this.canal = canal;
         }
 
@@ -67,12 +69,12 @@ public class TV {
     public int getCanal() {
         return this.canal;
     }
-    
+
     //Setear numero de televisores
-    public static void setNumTV(int aumento){
+    public static void setNumTV(int aumento) {
         numTV = aumento;
     }
-    
+
     //Get numTV(Numero de televisores creados)
     public static int getNumTV() {
         return numTV;
@@ -95,19 +97,19 @@ public class TV {
 
     //Recorrer canales hacia arriba
     public void canalUp() {
-    	int actual = this.canal;
-    	if((actual > 0) && (actual < 120)) {
-    		this.canal = this.canal + 1;
-    	}
-        
+        int actual = this.canal;
+        if ((actual > 0) && (actual < 120)) {
+            this.canal = this.canal + 1;
+        }
+
     }
 
     //Recorrer canales hacia abajo.
     public void canalDown() {
-    	int actual = this.canal;
-    	if((actual > 0) && (actual < 120)) {
-    		this.canal = this.canal - 1;
-    	}
+        int actual = this.canal;
+        if ((actual > 0) && (actual < 120)) {
+            this.canal = this.canal - 1;
+        }
     }
 
     //Subir volumen
