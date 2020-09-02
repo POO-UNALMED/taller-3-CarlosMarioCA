@@ -98,7 +98,7 @@ public class TV {
     public void canalUp() {
         int actual = this.canal;
         if ((actual >= 1) && (actual < 120)) {
-            this.canal = this.canal + 1;
+            setCanal(actual+1);
         }
 
     }
@@ -107,7 +107,7 @@ public class TV {
     public void canalDown() {
         int actual = this.canal;
         if ((actual > 0) && (actual <= 120)) {
-            this.canal = this.canal - 1;
+            setCanal(actual-1);
         }
     }
 
@@ -115,7 +115,7 @@ public class TV {
     public void volumenUp() {
         int actual = this.volumen;
         if ((actual >= 0) && (actual < 7)) {
-            actual = actual + 1;
+            setVolumen(actual+1);
         }
     }
 
@@ -123,7 +123,7 @@ public class TV {
     public void volumenDown() {
         int actual = this.volumen;
         if ((actual > 0) && (actual <= 7)) {
-            actual = actual - 1;
+            setVolumen(actual-1);
         }
     }
 }
