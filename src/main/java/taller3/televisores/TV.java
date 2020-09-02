@@ -49,7 +49,7 @@ public class TV {
 
     //Get y set de volumen
     public void setVolumen(int volumen) {
-        if ((volumen >= 0) && (volumen <= 7)) {
+        if ((volumen >= 0) && (volumen <= 7)&&(getEstado())) {
             this.volumen = volumen;
         }
     }
@@ -59,7 +59,7 @@ public class TV {
 
     //Get y set de canal
     public void setCanal(int canal) {
-        if ((canal >= 1) && (canal <= 120)) {
+        if ((canal >= 1) && (canal <= 120)&&(getEstado())) {
             this.canal = canal;
         }
     }
@@ -95,7 +95,7 @@ public class TV {
     //Recorrer canales hacia arriba
     public void canalUp() {
         int actual = this.canal;
-        if ((actual >= 1) && (actual < 120)) {
+        if ((actual >= 1) && (actual < 120)&&(getEstado())) {
             setCanal(actual+1);
         }
 
@@ -104,7 +104,7 @@ public class TV {
     //Recorrer canales hacia abajo.
     public void canalDown() {
         int actual = this.canal;
-        if ((actual > 1) && (actual <= 120)) {
+        if ((actual > 1) && (actual <= 120)&&(getEstado())) {
             setCanal(actual-1);
         }
     }
@@ -112,7 +112,7 @@ public class TV {
     //Subir volumen
     public void volumenUp() {
         int actual = this.volumen;
-        if ((actual >= 0) && (actual < 7)) {
+        if ((actual >= 0) && (actual < 7)&&(getEstado())) {
             setVolumen(actual+1);
         }
     }
@@ -120,7 +120,7 @@ public class TV {
     //Bajar volumen
     public void volumenDown() {
         int actual = this.volumen;
-        if ((actual > 0) && (actual <= 7)) {
+        if ((actual > 0) && (actual <= 7)&&(getEstado())) {
             setVolumen(actual-1);
         }
     }
