@@ -114,7 +114,7 @@ public class TV {
     //Subir volumen
     public void volumenUp() {
         int actual = this.volumen;
-        if ((actual >= 0) && (actual <= 7)) {
+        if ((actual > 0) && (actual < 7)) {
             actual = actual + 1;
         }
     }
@@ -122,7 +122,7 @@ public class TV {
     //Bajar volumen
     public void volumenDown() {
         int actual = this.volumen;
-        if ((actual >= 0) && (actual <= 7)) {
+        if ((actual > 0) && (actual < 7)) {
             actual = actual - 1;
         }
     }
