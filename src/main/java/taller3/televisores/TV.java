@@ -96,7 +96,7 @@ public class TV {
     //Recorrer canales hacia arriba
     public void canalUp() {
     	int actual = this.canal;
-    	if((actual >= 0) && (actual <= 120)) {
+    	if((actual > 0) && (actual < 120)) {
     		this.canal = this.canal + 1;
     	}
         
@@ -105,7 +105,7 @@ public class TV {
     //Recorrer canales hacia abajo.
     public void canalDown() {
     	int actual = this.canal;
-    	if((actual >= 0) && (actual <= 120)) {
+    	if((actual > 0) && (actual < 120)) {
     		this.canal = this.canal - 1;
     	}
     }
