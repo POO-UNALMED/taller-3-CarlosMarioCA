@@ -17,7 +17,7 @@ public class TV {
         this.canal = 1;
         this.volumen = 1;
         this.precio = 500;
-        this.numTV++;
+        this.numTV ++;
     }
 
     //Get y set de Marca
@@ -53,7 +53,6 @@ public class TV {
             this.volumen = volumen;
         }
     }
-
     public int getVolumen() {
         return this.volumen;
     }
@@ -64,7 +63,6 @@ public class TV {
             this.canal = canal;
         }
     }
-
     public int getCanal() {
         return this.canal;
     }
@@ -106,7 +104,7 @@ public class TV {
     //Recorrer canales hacia abajo.
     public void canalDown() {
         int actual = this.canal;
-        if ((actual > 0) && (actual <= 120)) {
+        if ((actual > 1) && (actual <= 120)) {
             setCanal(actual-1);
         }
     }
