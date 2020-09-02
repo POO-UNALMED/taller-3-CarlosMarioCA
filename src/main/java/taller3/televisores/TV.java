@@ -60,7 +60,7 @@ public class TV {
 
     //Get y set de canal
     public void setCanal(int canal) {
-        if ((canal >= 0) && (canal <= 120)) {
+        if ((canal >= 1) && (canal <= 120)) {
             this.canal = canal;
         }
     }
@@ -97,7 +97,7 @@ public class TV {
     //Recorrer canales hacia arriba
     public void canalUp() {
         int actual = this.canal;
-        if ((actual >= 0) && (actual < 120)) {
+        if ((actual >= 1) && (actual < 120)) {
             this.canal = this.canal + 1;
         }
 
