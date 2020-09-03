@@ -4,11 +4,11 @@ public class TV {
 
     Marca marca;
     int canal;
-    int precio;
+    private int precio;
     boolean estado;
     int volumen;
-    Control control;
-    static int numTV;
+    private Control control;
+    private static int numTV;
 
     public TV(Marca marca, boolean estado) {
 
